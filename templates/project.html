@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %} Project page {% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/project.css') }}">
+{% endblock %}
+{% block content %}
+<div>
+<div class="contact_app">
+    <h2>Contact_app</h2>
+    <h3>A simple contact app using python(flask) which saves , delete contacts using sql database</h3>
+     <a href="https://github.com/shivani-033/Contact_app"><img src="{{url_for('static' , filename = 'images/contact.jpg')}}" alt=".."></a>
+</div>
+<div class="blog">
+    <h2>blog_website</h2>
+    <h3>A simple blog website using python(flask) which login , registration and saves post using sql database</h3>
+     <a href="https://github.com/shivani-033/blog_website"><img src="{{url_for('static' , filename = 'images/blog.jpg')}}" alt=".."></a>
+</div>
+<div class="diary">
+    <h2>Diary_app</h2>
+    <h3>A simple diary app using python(flask) which saves your diaries  using sql database</h3>
+     <a href="https://github.com/shivani-033/diary_app"><img src="{{url_for('static' , filename = 'images/diary.jpg')}}" alt=".."></a>
+</div>
+</div>
+{% endblock %}

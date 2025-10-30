@@ -1,0 +1,80 @@
+/* CONTACT PAGE — clean and centered layout only for contact.html */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact Box */
+.contact {
+  width: 500px;
+  margin: 80px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  text-align: center;
+}
+
+/* Heading */
+.contact h2 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #4a90e2;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Description Paragraph */
+.contact p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 12px 0;
+}
+
+/* Contact Info */
+.contact p:nth-child(n+3) {
+  background: #f1f6ff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.contact p:nth-child(n+3):hover {
+  background: #e4ecff;
+}
+
+/* Links */
+.contact a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #2c68b6;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .contact {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact p {
+    font-size: 0.95rem;
+  }
+}
+
+

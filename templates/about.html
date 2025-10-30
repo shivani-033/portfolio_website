@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %} About page {% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+{% endblock %}
+{% block content %}
+<div id = "about">
+  <h2>About Me</h2>
+  <ul>
+    <li>
+  <p>
+    Hi, I’m <strong>Shivani Chauhan</strong>, a 3rd-year BTech (IT) student passionate about 
+    turning data into insights and building impactful solutions with technology. 
+  </p>
+  </li>
+  <li>
+  <p>
+    I specialize in <strong>Python, Flask, Pandas, SQL, HTML, CSS, and C</strong>, 
+    with some experience in JavaScript. I enjoy combining web development with data analysis 
+    to create meaningful projects. 
+  </p>
+  </li>
+  <li>
+  <p>
+    I’ve built projects like a <em>Contact App</em>, <em>Blog Website</em>, and an 
+    <em>Online Quiz System</em>, and I’m continuously expanding my skills to prepare 
+    for a career in <strong>Data Science</strong>.
+  </p>
+  </li>
+  <li>
+  <p>
+    Beyond coding, I love exploring tech trends, learning new tools, and challenging myself 
+    with projects that bring ideas to life.
+  </p>
+  </li>
+  </ul>
+</div>
+{% endblock %}
